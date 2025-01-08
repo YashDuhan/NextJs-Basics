@@ -27,6 +27,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        {/* Always appear before the layouts */}
+        {/* Nav Bar started */}
+        <div className="p-4 border-b">Nav Bar</div>
+        {/* Nav Bar ended */}
         {children}
       </body>
     </html>
